@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/* Шрифты */
+@font-face { font-family: 'ProximaNova_light'; src: url("../fonts/ProximaNova-Light.eot"); src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff2") format("woff2"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype"), url("../fonts/ProximaNova-Light.svg#ProximaNova-Light") format("svg"); font-weight: 300; font-style: normal; }
+@font-face { font-family: 'ProximaNova_bold'; src: url("../fonts/ProximaNova-Bold.eot"); src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg"); font-weight: bold; font-style: normal; }
+@import-normalize;
+html { font-size: 10px; }
+
+body { width: 100%; }
+
+a:hover { cursor: pointer; }
+
+* { font-family: 'ProximaNova_light', sans-serif; color: #000000; box-sizing: border-box; }
+
+button:hover { cursor: pointer; }
+
+button, input { border: none; outline: none; }
+
+button:focus, input:focus, a:focus, select:focus, textarea:focus, div:focus { outline: none; }
+
+.line { display: flex; }
+
+header { background-color: #17a2b8; padding: 1rem 1.5rem 1rem 1.5rem; }
+header .nav { justify-content: flex-start; align-items: center; }
+header .nav .header_Button { display: none; width: 2.8rem; height: auto; padding: 0.5rem; position: relative; }
+header .nav .header_Button:hover { background-color: #79c5d1; }
+header .nav .header_Little_Menu { position: relative; z-index: 2; padding-top: 1rem; display: flex; flex-direction: column; position: absolute; background-color: #79c5d1; width: 19rem; height: 22rem; transition: 0.4s; }
+header .nav .header_Little_Menu a { display: block; margin: 0.4rem auto; padding: 0.5rem 0.8rem; font-size: 1.6rem; color: #fff; text-decoration: none; text-align: center; }
+header .nav .header_Little_Menu a:hover { background-color: #17a2b8; }
+header .nav .header_Little_Menu button { position: absolute; top: -0.5rem; right: 0; background-color: transparent; font-family: 'ProximaNova_bold', sans-serif; font-size: 4.4rem; color: #fff; }
+header .nav .header_Big_Menu { display: block; margin: 0 0.5rem 0 0.5rem; padding: 0.5rem; font-size: 1.6rem; color: #fff; text-decoration: none; }
+header .nav .header_Big_Menu:hover { background-color: #79c5d1; }
+header .nav_Out { margin: 0 0 0 auto; display: flex; align-items: center; }
+header .nav_Out .nav_Out_Exit { vertical-align: middle; margin: 0 0 0 2rem; padding: 0.5rem; font-size: 1.6rem; color: #fff; text-decoration: none; cursor: pointer; }
+header .nav_Out .nav_Out_Exit:hover { background-color: #79c5d1; }
+header .nav_Out span { font-size: 1.6rem; color: #fff; text-decoration: none; vertical-align: middle; }
+
+.content_Review { width: 100%; padding: 0.6rem 1rem; flex-wrap: wrap; justify-content: space-between; }
+.content_Review_Header { width: 100%; padding: 1.5rem 0; margin: 0 0 1rem 0; font-family: 'ProximaNova_bold', sans-serif; font-size: 2.5rem; border-bottom: 1px solid #ebe9e9; }
+.content_Review_Tasks { width: 49%; background-color: #f5f5f2; padding: 0.3rem 0.5rem; margin-bottom: 1rem; }
+.content_Review_Tasks:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+.content_Review_Tasks h2 { font-family: 'ProximaNova_bold', sans-serif; margin: 0.5rem 0; font-size: 1.8rem; }
+.content_Review_Tasks a { font-size: 1.4rem; color: #1a73a8; font-weight: 600; text-decoration: none; }
+.content_Review_Tasks a:hover { text-decoration: underline; }
+.content_Review_Members { width: 49%; background-color: #f5f5f2; padding: 0.3rem 0.5rem; }
+.content_Review_Members:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+.content_Review_Members h2 { font-family: 'ProximaNova_bold', sans-serif; margin: 0.5rem 0; font-size: 1.8rem; }
+.content_Review_Members a { font-size: 1.4rem; color: #1a73a8; font-weight: 600; text-decoration: none; }
+.content_Review_Members a:hover { text-decoration: underline; }
+.content_Review_News { width: 49%; background-color: #f5f5f2; padding: 0.3rem 0.5rem; }
+.content_Review_News:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+.content_Review_News h2 { font-family: 'ProximaNova_bold', sans-serif; margin: 0.5rem 0; font-size: 1.8rem; }
+.content_Review_News ul li { font-size: 1.4rem; color: #000000; }
+
+.tasks { width: 100%; padding: 0.6rem 1rem; }
+.tasks_Header { width: 100%; padding: 1.5rem 0; margin: 0 0 1rem 0; font-family: 'ProximaNova_bold', sans-serif; font-size: 2.5rem; border-bottom: 1px solid #ebe9e9; }
+.tasks_Form { width: 100%; margin-bottom: 1rem; align-items: center; }
+.tasks_Form_Block { flex-grow: 1; }
+.tasks_Form_Block_Add { padding: 0.6rem 1rem; background-color: #007bff; font-size: 1.4rem; color: #fff; border-radius: 5px; text-decoration: none; }
+.tasks_Form_Block_Add:hover { box-shadow: 0 0 10px rgba(0, 97, 202, 0.5); }
+.tasks_Form_Block_Add:active { box-shadow: 0 0 10px rgba(0, 97, 202, 0.8); }
+.tasks_Form_Select { margin: 0 3rem 0 0; width: 14rem; height: 2.5rem; font-size: 1.4rem; border-radius: 5px; }
+.tasks_Form_Select:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+.tasks_Form_Search { width: 8rem; padding: 0.6rem 1rem; background-color: #007bff; font-size: 1.4rem; text-align: center; color: #fff; border-radius: 5px; cursor: pointer; }
+.tasks_Form_Search:hover { box-shadow: 0 0 10px rgba(0, 97, 202, 0.5); }
+.tasks_Form_Search:active { box-shadow: 0 0 10px rgba(0, 97, 202, 0.8); }
+.tasks_Options_Statuses { display: flex; align-items: center; padding: 0.5rem 0; }
+.tasks_Options_Statuses_Select { margin: 0 4rem 0 0; width: 15rem; height: 2.5rem; font-size: 1.4rem; border-radius: 5px; }
+.tasks_Options_Statuses_Select:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+.tasks_Options_Statuses button { padding: 0.6rem 1rem; background-color: #007bff; font-size: 1.4rem; color: #fff; border-radius: 5px; }
+.tasks_Options_Statuses button:hover { box-shadow: 0 0 10px rgba(0, 97, 202, 0.5); }
+.tasks_Options_Statuses button:active { box-shadow: 0 0 10px rgba(0, 97, 202, 0.8); }
+.tasks_Options_Responsible { display: flex; align-items: center; padding: 0.5rem 0; }
+.tasks_Options_Responsible_Select { margin: 0 4rem 0 0; width: 15rem; height: 2.5rem; font-size: 1.4rem; border-radius: 5px; }
+.tasks_Options_Responsible button { padding: 0.6rem 1rem; background-color: #007bff; font-size: 1.4rem; color: #fff; border-radius: 5px; }
+.tasks_Options_Responsible button:hover { box-shadow: 0 0 10px rgba(0, 97, 202, 0.5); }
+.tasks_Options_Responsible button:active { box-shadow: 0 0 10px rgba(0, 97, 202, 0.8); }
+.tasks_Shell_Table { width: 100%; }
+.tasks_Shell_Table th { font-family: 'ProximaNova_bold', sans-serif; font-size: 1.6rem; border-top: 1px solid #000000; border-bottom: 1px solid #000000; }
+.tasks_Shell_Table td { padding: 0.5rem 0; font-size: 1.4rem; border-bottom: 1px solid #000000; text-align: center; }
+.tasks_Shell_Table_Symbol { width: 4%; text-align: center; }
+.tasks_Shell_Table_Number { width: 7%; text-align: center; }
+.tasks_Shell_Table_Type { text-align: center; }
+.tasks_Shell_Table_Status { text-align: center; }
+.tasks_Shell_Table_Date { width: 15%; text-align: center; }
+.tasks_Shell_Table tr:nth-child(2n) { background-color: #f5f5f8; }
+.tasks_Shell_Table .first { background-color: #efedf2; }
+.tasks_Shell_Table tr ~ tr:hover { background-color: #e0eaf8; }
+
+/* Страница конкретной задачи */
+.content_Task { width: 100%; padding: 0.6rem 1rem; }
+.content_Task_Header { width: 100%; padding: 1.5rem 0.5rem; margin: 0 0 1rem 0; font-family: 'ProximaNova_bold', sans-serif; font-size: 2.5rem; border-bottom: 1px solid #ebe9e9; }
+.content_Task_Service h2 { font-family: 'ProximaNova_bold', sans-serif; padding: 0 0.5rem; margin: 0 0 1rem 0; font-size: 2.1rem; }
+.content_Task_Service_Tables { display: flex; margin: 0 0 1rem 0; padding: 0 0.5rem; border-bottom: 1px solid #ebe9e9; }
+.content_Task_Service_Tables table { width: 40%; margin: 0 0 1rem 0; }
+.content_Task_Service_Tables table td { padding: 0.2rem 0; font-family: 'ProximaNova_light', sans-serif; font-size: 1.4rem; }
+.content_Task_Service_Tables_Name { font-family: 'ProximaNova_light', sans-serif; width: 45%; font-weight: 900; }
+.content_Task_Info { margin: 0 0 1rem 0; padding: 0 0.5rem 2rem 0.5rem; border-bottom: 1px solid #ebe9e9; }
+.content_Task_Info_Label { margin: 0 0 0.8rem 0; font-family: 'ProximaNova_light', sans-serif; font-size: 1.8rem; font-weight: 900; }
+.content_Task_Info_Text { margin: 0; font-family: 'ProximaNova_light', sans-serif; font-size: 1.5rem; text-align: justify; }
+.content_Task_Add { margin: 0 0 1rem 0; padding: 0 0.5rem; }
+.content_Task_Add_Text { width: 100%; min-height: 4.8rem; margin: 0 0 1rem 0; padding: 0.3rem 0.5rem; font-size: 1.5rem; border-radius: 3px; border: 1px solid #bab4b4; background-color: #ebe9e9; }
+.content_Task_Add button { display: block; margin: 0 0 0 auto; padding: 0.6rem 1rem; background-color: #007bff; font-size: 1.4rem; color: #fff; border-radius: 5px; text-decoration: none; }
+.content_Task_Add button:hover { box-shadow: 0 0 10px rgba(0, 97, 202, 0.5); }
+.content_Task_Add button:active { box-shadow: 0 0 10px rgba(0, 97, 202, 0.8); }
+.content_Task_Comments { background-color: #f5f5f5; border-radius: 3px; padding: 1rem 0.5rem; }
+.content_Task_Comments h2 { margin: 0 0 1rem 0; font-family: 'ProximaNova_light', sans-serif; font-size: 1.8rem; font-weight: 900; }
+.content_Task_Comments_Item { margin: 1.5rem 0 0 0; padding: 0.2rem 0.5rem; background-color: #ebe9e9; border: 1px solid #bab4b4; border-radius: 3px; }
+.content_Task_Comments_Item_Name { margin: 0.5rem 0.8rem; font-size: 1.2rem; }
+.content_Task_Comments_Item_Text { margin: 1rem 0.8rem 0.5rem 0.8rem; font-size: 1.4rem; }
+
+/* Страница добавления задачи */
+.content_AddTask { width: 100%; padding: 0.6rem 1rem; flex-wrap: wrap; justify-content: space-between; overflow: hidden; }
+.content_AddTask_Header { width: 100%; padding: 1.5rem 0; margin: 0 0 1rem 0; font-family: 'ProximaNova_bold', sans-serif; font-size: 2.5rem; border-bottom: 1px solid #ebe9e9; }
+.content_AddTask_Info_Parameters { padding: 0 0 0.5rem 0; margin: 0 0 1rem 0; border-bottom: 1px solid #ebe9e9; display: flex; }
+.content_AddTask_Info_Parameters_Right { width: 35%; }
+.content_AddTask_Info_Parameters_Right div { display: block; margin: 0.5rem 0; font-size: 1.4rem; }
+.content_AddTask_Info_Parameters_Left { width: 35%; }
+.content_AddTask_Info_Parameters_Left div { display: block; margin: 0.5rem 0; font-size: 1.4rem; }
+.content_AddTask_Info_Parameters select { margin: 0 0 1rem 0; width: 15rem; height: 2.5rem; font-size: 1.4rem; border-radius: 3px; border: 1px solid #bab4b4; }
+.content_AddTask_Info_Parameters select:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+.content_AddTask_Info_Text label { display: block; margin: 0 0 1rem 0; font-family: 'ProximaNova_bold', sans-serif; font-size: 1.6rem; }
+.content_AddTask_Info_Text input { width: 100%; height: 3rem; margin: 0 0 2.5rem 0; padding: 0.2rem 0.5rem; font-size: 1.4rem; border-radius: 3px; border: 1px solid #bab4b4; background-color: #ebe9e9; }
+.content_AddTask_Info_Text input:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+.content_AddTask_Info_Text_Tunes { width: 100%; height: 3.5rem; margin-left: -0.2rem; }
+.content_AddTask_Info_Text_Add { display: block; margin: 1rem 0.5rem 0 auto; padding: 0.6rem 1rem; background-color: #007bff; font-size: 1.4rem; color: #fff; border-radius: 3px; }
+.content_AddTask_Info_Text_Add:hover { box-shadow: 0 0 10px rgba(0, 97, 202, 0.5); }
+.content_AddTask_Info_Text_Add:active { box-shadow: 0 0 10px rgba(0, 97, 202, 0.8); }
+.content_AddTask_Info_Text .ck-toolbar { border-top-left-radius: 3px !important; border-top-right-radius: 3px !important; background-color: #ebe9e9 !important; border: 1px solid #bab4b4; }
+.content_AddTask_Info_Text .ck-content { border-bottom-left-radius: 3px !important; border-bottom-right-radius: 3px !important; background-color: #ebe9e9 !important; height: 20rem; font-size: 1.4rem; box-shadow: none !important; border: 1px solid #bab4b4; }
+.content_AddTask_Info_Text .ck-content p { margin: 0.8rem 0; }
+.content_AddTask_Info_Text .ck-focused { border: 1px solid #bab4b4 !important; }
+.content_AddTask_Info_Text .ck-dropdown__arrow { z-index: 0 !important; }
+.content_AddTask_Info_Text .ck-editor:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+
+/* Сообщения */
+.dialogs { width: 100%; padding: 0.6rem 1rem; flex-wrap: wrap; justify-content: space-between; }
+.dialogs_Header { width: 100%; padding: 1.5rem 0; margin: 0; font-family: 'ProximaNova_bold', sans-serif; font-size: 2.5rem; border-bottom: 1px solid #ebe9e9; }
+.dialogs_Channels { width: 17%; }
+.dialogs_Channels_Header { width: 100%; padding: 1rem 0; margin: 0 0 1rem 0; font-family: 'ProximaNova_bold', sans-serif; font-size: 2rem; border-bottom: 1px solid #ebe9e9; }
+.dialogs_Channels ul { margin: 0; padding: 0; }
+.dialogs_Channels ul li { width: 100%; list-style-type: none; font-size: 1.6rem; padding: 1rem 2rem; margin-bottom: 0.5rem; border: 1px solid #ebe9e9; cursor: pointer; border-radius: 3px; }
+.dialogs_Channels ul li:hover { box-shadow: 0 0 10px rgba(0, 97, 202, 0.5); }
+.dialogs_Channels ul li:active { box-shadow: 0 0 10px rgba(0, 97, 202, 0.8); }
+.dialogs_Channels ul li:nth-child(1) { background-color: #007bff; color: #fff; border: 1px solid #007bff !important; }
+.dialogs_Messages { width: 65%; }
+.dialogs_Messages_Header { width: 100%; padding: 1rem 0; margin: 0 0 1rem 0; font-family: 'ProximaNova_bold', sans-serif; font-size: 2rem; border-bottom: 1px solid #ebe9e9; }
+.dialogs_Messages_Tank { width: 100%; height: 50vh; padding: 0.8rem; margin: 0 0 1.5rem 0; overflow-y: auto; }
+.dialogs_Messages_Tank .guest { margin-bottom: 1rem; padding: 0.3rem 0.5rem; border: 1px solid #bbdbfd; border-radius: 5px; }
+.dialogs_Messages_Tank .guest p { text-align: left; }
+.dialogs_Messages_Tank .owner { margin-bottom: 1rem; padding: 0.3rem 0.5rem; border: 1px solid #17a2b8; border-radius: 5px; }
+.dialogs_Messages_Tank .owner p { text-align: right; }
+.dialogs_Messages_Tank .member_Name, .dialogs_Messages_Tank .member_Date { font-size: 1.1rem; margin: 0.7rem 0; }
+.dialogs_Messages_Tank .member_Message { margin: 0; font-size: 1.3rem; font-weight: 600; }
+.dialogs_Messages form { width: 100%; display: flex; flex-wrap: wrap; }
+.dialogs_Messages form textarea { width: 100%; height: 10vh; margin: 0 0 1rem 1%; font-size: 1.3rem; border: 1px solid #ebe9e9; border-radius: 5px; }
+.dialogs_Messages form textarea:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+.dialogs_Messages form button { margin: 0 0 0 auto; padding: 0.6rem 1rem; background-color: #007bff; font-size: 1.4rem; color: #fff; border-radius: 5px; }
+.dialogs_Messages form button:hover { box-shadow: 0 0 10px rgba(0, 97, 202, 0.5); }
+.dialogs_Messages form button:active { box-shadow: 0 0 10px rgba(0, 97, 202, 0.8); }
+.dialogs_Members { width: 15%; }
+.dialogs_Members_Header { width: 100%; padding: 1rem 0; margin: 0 0 1rem 0; font-family: 'ProximaNova_bold', sans-serif; font-size: 2rem; border-bottom: 1px solid #ebe9e9; }
+.dialogs_Members ul { position: relative; margin: 0; padding: 0; }
+.dialogs_Members ul li { width: 100%; list-style-type: none; font-size: 1.4rem; padding: 1rem 1rem 1rem 2rem; margin-bottom: 0.5rem; border: 1px solid #ebe9e9; cursor: pointer; text-align: left; overflow-x: auto; border-radius: 3px; }
+.dialogs_Members ul li:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+.dialogs_Members ul li:active { border: 1px solid #d3cece; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+.dialogs_Members ul li:nth-child(1)::before { position: absolute; content: ''; width: 1rem; height: 1rem; background-color: #8cdb84; left: 0.9rem; top: 1.25rem; border-radius: 50%; }
+
+/* Страница пользователя */
+.content_Member { width: 100%; padding: 0.6rem 1rem; }
+.content_Member_Header { align-items: center; border-bottom: 1px solid #ebe9e9; padding: 1.5rem 0 1.5rem 1rem; }
+.content_Member_Header_Photo { width: 10rem; height: 10rem; border-radius: 1rem; }
+.content_Member_Header_Name { margin: 0 0 0 2rem; font-family: 'ProximaNova_bold', sans-serif; font-size: 2.5rem; }
+.content_Member_Info { margin: 0 0 1rem 0; flex-wrap: wrap; }
+.content_Member_Info table { width: 45%; padding: 1rem 0; }
+.content_Member_Info table .content_Member_Info_Icon { padding: 0.2rem 0; width: 3rem; }
+.content_Member_Info table .content_Member_Info_Icon img { vertical-align: middle; position: relative; top: -0.2rem; margin: 0 0.8rem 0 0; width: 3rem; height: 3rem; }
+.content_Member_Info table .content_Member_Info_Name { padding: 0.2rem 0; font-family: 'ProximaNova_light', sans-serif; font-size: 1.4rem; }
+.content_Member_Info table .content_Member_Info_Value { padding: 0.2rem 0; font-family: 'ProximaNova_light', sans-serif; font-size: 1.4rem; }
+.content_Member_Info_Name { width: 50%; font-weight: 900; }
+.content_Member_Info_Tasks { width: 100%; border-top: 1px solid #ebe9e9; }
+.content_Member_Info_Tasks_Header { font-family: 'ProximaNova_bold', sans-serif; font-size: 1.8rem; }
+.content_Member_Info_Tasks_Value { font-family: 'ProximaNova_light', sans-serif; font-size: 1.4rem; }
+.content_Member_Info_Tasks_Value a:hover { color: #007bff; }
+
+/* Модальные окна */
+.modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+.modal_Window { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; z-index: 1; width: 32rem; height: 12rem; display: flex; align-items: center; justify-content: center; border-radius: 3px; }
+.modal_Window p { font-family: 'ProximaNova_bold', sans-serif; font-size: 2.4rem; text-align: center; }
+.modal_Window button { position: absolute; height: 6rem; font-size: 5rem; background-color: transparent; top: -1rem; right: 0; }
+
+/* Страница не найдена */
+.not_Found_Number { margin: 5rem 0 0 0; font-family: 'ProximaNova_bold', sans-serif; font-size: 15rem; text-align: center; }
+.not_Found_Text { margin: 0; font-size: 5rem; text-align: center; }
+
+@media (min-width: 768px) and (max-width: 991px) { /* Сообщения */
+  .dialogs_Channels { width: 20%; }
+  .dialogs_Channels ul li { padding: 1rem 1rem; }
+  .dialogs_Messages { width: 55%; }
+  .dialogs_Members { width: 21%; }
+  /* Страница пользователя */
+  .content_Member { width: 100%; }
+  .content_Member_Info table { width: 50%; } }
+@media (min-width: 576px) and (max-width: 767px) { /* Панель управления */
+  header .nav .header_Button { display: block; }
+  header .nav .header_Big_Menu { display: none; }
+  /* Страница обзора */
+  .content_Review_Header { width: 100%; }
+  .content_Review_Tasks { width: 100%; }
+  .content_Review_Members { width: 100%; margin: 0 0 1rem 0; }
+  .content_Review_News { width: 100%; }
+  /* Страница добавления задачи */
+  .content_AddTask_Info_Parameters { padding: 0 0 0.5rem 0; margin: 0 0 1rem 0; }
+  .content_AddTask_Info_Parameters_Right { width: 50%; }
+  .content_AddTask_Info_Parameters_Right div { font-size: 1.6rem; }
+  .content_AddTask_Info_Parameters_Left { width: 48%; margin-right: 2rem; }
+  .content_AddTask_Info_Parameters_Left div { font-size: 1.6rem; }
+  .content_AddTask_Info_Parameters select { width: 100%; height: 3rem; font-size: 1.6rem; }
+  .content_AddTask_Info_Text_Add { width: 100%; padding: 1rem 1rem; font-size: 1.6rem; }
+  /* Страница конкретной задачи */
+  .content_Task_Header { padding: 1rem 0.5rem; }
+  .content_Task_Service_Tables { display: flex; margin: 0 0 1rem 0; padding: 0 0.5rem; border-bottom: 1px solid #ebe9e9; }
+  .content_Task_Service_Tables table { width: 50%; }
+  .content_Task_Service_Tables_Name { width: 50%; }
+  /* Сообщения */
+  .dialogs_Header { order: 0; }
+  .dialogs_Channels { order: 1; width: 48%; }
+  .dialogs_Channels ul li { text-align: center; }
+  .dialogs_Messages { order: 3; width: 100%; margin-top: 1.5rem; }
+  .dialogs_Messages_Header { width: 100%; padding: 1rem 0; margin: 0 0 1rem 0; }
+  .dialogs_Members { order: 2; width: 48%; }
+  .dialogs_Members ul { height: 13.2rem; overflow-y: auto; }
+  .dialogs_Members ul li { width: 98%; }
+  /* Страница пользователя */
+  .content_Member { width: 100%; }
+  .content_Member_Info table { width: 50%; } }
+@media (max-width: 575px) { /* Панель управления */
+  header .nav .header_Button { display: block; }
+  header .nav .header_Big_Menu { display: none; }
+  /* Станица обзора */
+  .content_Review_Header { width: 100%; }
+  .content_Review_Tasks { width: 100%; }
+  .content_Review_Members { width: 100%; margin: 0 0 1rem 0; }
+  .content_Review_News { width: 100%; }
+  /* Страница задач */
+  .tasks_Form { width: 100%; margin-bottom: 1rem; align-items: center; flex-wrap: wrap; }
+  .tasks_Form_Block { flex-grow: 1; width: 100%; text-align: center; }
+  .tasks_Form_Block_Add { display: block; width: 100%; padding: 1rem 1rem; margin: 0 auto 1.5rem auto; font-size: 1.6rem; }
+  .tasks_Form_Select { margin: 0 0 0.5rem 0; width: 100%; height: 3rem; font-size: 1.6rem; }
+  .tasks_Form_Search { width: 100%; padding: 1rem 1rem; font-size: 1.6rem; }
+  .tasks_Options_Statuses_Select { margin: 0 0.5rem 0 0; width: 70%; height: 3rem; font-size: 1.6rem; }
+  .tasks_Options_Statuses button { width: 29%; padding: 0.6rem 1rem; font-size: 1.6rem; }
+  .tasks_Options_Responsible_Select { margin: 0 0.5rem 0 0; width: 70%; height: 3rem; font-size: 1.6rem; }
+  .tasks_Options_Responsible button { width: 29%; padding: 0.6rem 1rem; font-size: 1.6rem; }
+  .tasks_Shell { width: 100%; overflow: auto; }
+  .tasks_Shell_Table th { padding: 0.4rem 0.5rem; }
+  .tasks_Shell_Table td { padding: 0.5rem 0.3rem; }
+  /* Страница добавления задачи */
+  .content_AddTask_Info_Parameters { padding: 0 0 0.5rem 0; margin: 0 0 1rem 0; flex-wrap: wrap; }
+  .content_AddTask_Info_Parameters_Right { width: 100%; }
+  .content_AddTask_Info_Parameters_Right div { font-size: 1.6rem; margin-bottom: 0.2rem; }
+  .content_AddTask_Info_Parameters_Left { width: 100%; margin-right: 0; }
+  .content_AddTask_Info_Parameters_Left div { font-size: 1.6rem; margin-bottom: 0.2rem; }
+  .content_AddTask_Info_Parameters select { width: 100%; height: 3rem; font-size: 1.6rem; margin-bottom: 0.5rem; }
+  .content_AddTask_Info_Text_Add { width: 100%; padding: 1rem 1rem; font-size: 1.6rem; }
+  /* Страница конкретной задачи */
+  .content_Task_Header { padding: 1rem 0.5rem; }
+  .content_Task_Service_Tables { flex-wrap: wrap; }
+  .content_Task_Service_Tables table { width: 100%; margin-bottom: 0; }
+  .content_Task_Service_Tables_Name { width: 50%; }
+  .content_Task_Add_Text { margin: 0 0 0.5rem 0; }
+  .content_Task_Add button { width: 100%; margin: 0 auto 2rem auto; padding: 0.8rem 1rem; font-size: 1.6rem; }
+  .content_Task_Comments { background-color: #f5f5f5; border-radius: 3px; padding: 1rem 0.5rem; }
+  .content_Task_Comments h2 { margin: 0 0 1rem 0; font-family: 'ProximaNova_light', sans-serif; font-size: 1.8rem; font-weight: 900; }
+  .content_Task_Comments_Item { margin: 1.5rem 0 0 0; padding: 0.2rem 0.5rem; background-color: #ebe9e9; border: 1px solid #bab4b4; border-radius: 3px; }
+  .content_Task_Comments_Item_Name { margin: 0.5rem 0.8rem; font-size: 1.2rem; }
+  .content_Task_Comments_Item_Text { margin: 1rem 0.8rem 0.5rem 0.8rem; font-size: 1.4rem; }
+  /* Сообщения */
+  .dialogs_Header { order: 0; text-align: left; }
+  .dialogs_Channels { order: 1; width: 100%; }
+  .dialogs_Channels ul li { text-align: center; }
+  .dialogs_Messages { order: 3; width: 100%; margin-top: 1.5rem; }
+  .dialogs_Messages_Header { width: 100%; padding: 1rem 0; margin: 0 0 1rem 0; text-align: left; }
+  .dialogs_Messages form button { width: 100%; margin: 0 auto; padding: 0.8rem 1rem; font-size: 1.6rem; }
+  .dialogs_Members { order: 2; width: 100%; }
+  .dialogs_Members ul { height: 13.2rem; overflow-y: auto; }
+  .dialogs_Members ul li { width: 98%; text-align: center; }
+  .dialogs_Members ul li:nth-child(1)::before { left: 1.5rem; }
+  /* Страница пользователя */
+  .content_Member { width: 100%; }
+  .content_Member_Info table { width: 100%; } }
